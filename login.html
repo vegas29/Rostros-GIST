@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Fuentes externas-->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans:wght@400;700&family=Pattaya&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+    <!--.Fuentes externas-->
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <title>Rostros - Login</title>
+</head>
+<body>
+    
+    <div class="layout__grid layout__grid--login">
+        <div class="grid__sidebar grid__sidebar--login">
+            <div class="contenedor">
+                <h4 class="text-rostros">Rostros</h4>
+                <p class="cita__sidebar">Nunca dejaremos de preocuparnos por ti!</p>
+                <img class="foto__sidebar" src="img/people_search.png" alt="Foto persona con lupa">
+            </div>
+        </div>
+
+        <div class="grid__formulario grid__formulario--login">
+            <div class="contenedor--form contenedor--form--login">
+                <form class="formulario">
+                    <h1 class="centrar-texto myt-7">Iniciar Sesión en Rostros</h1>
+                    
+                    
+
+                    <div class="input">
+                        <label class="label bold" for="correo">Corrreo eléctronico</label>
+                        <input type="email" class="input-style input--alone" id="correo">
+                    </div>
+
+                    <div class="input">
+                        <label class="label bold" for="password">Digite la contraseña</label>
+                        <input type="password" class="input-style" id="password">
+                    </div>
+
+
+
+                    <a class="enlace" href="#">¿Olvidaste tu contraseña?</a>
+                    <input type="submit" value="Iniciar Sesión" class="boton boton--primario centrar-bloque">
+                    <a class="boton boton--secundario centrar-bloque" href="#">Registrarse</a>
+                    
+                </form>
+            </div>
+        </div>
+        
+    </div>
+    
+</body>
+</html>
