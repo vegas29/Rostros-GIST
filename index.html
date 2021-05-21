@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Fuentes externas-->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans:wght@400;700&family=Pattaya&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+    <!--.Fuentes externas-->
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <title>Rostros - Login</title>
+</head>
+<body>
+    
+    <div class="layout__grid">
+        <div class="grid__sidebar">
+            <div class="contenedor">
+                <h4 class="text-rostros">Rostros</h4>
+                <p class="cita__sidebar">Nunca dejaremos de preocuparnos por ti!</p>
+                <img class="foto__sidebar" src="img/people_search.png" alt="Foto persona con lupa">
+            </div>
+        </div>
+
+        <div class="grid__formulario">
+            <div class="contenedor--form">
+                <form>
+                    <h1 class="centrar-texto myt-7">Registrarse en Rostros</h1>
+                    <p class="centrar-texto bold">*Por favor complete el formulario*</p>
+                    <div class="input-group">
+                        <div class="input">
+                            <label class="label bold" for="nombre">Digite el nombre</label>
+                            <input type="text" class="input-style" id="nombre">
+                        </div>
+
+                        <div class="input">
+                            <label class="label bold" for="apellido">Digite el apellido</label>
+                            <input type="text" class="input-style" id="apellido">
+                        </div>
+                    </div>
+
+                    <div class="input">
+                        <label class="label bold" for="correo">Corrreo eléctronico</label>
+                        <input type="email" class="input-style input--alone" id="correo">
+                    </div>
+
+                    <div class="input-group">
+                        <div class="input">
+                            <label class="label bold" for="password">Digite la contraseña</label>
+                            <input type="password" class="input-style" id="password">
+                        </div>
+
+                        <div class="input">
+                            <label class="label bold" for="rpassword">Digite de nuevo la contraseña</label>
+                            <input type="password" class="input-style" id="rpassword">
+                        </div>
+                    </div>
+                    
+                    <div class="input-group">
+                        <div class="input">
+                            <label class="label bold" for="pais">País</label>
+                            <select type="password" class="input-style" id="pais">
+                                <option>--Seleccione un pais--</option>
+                            </select>
+                        </div>
+
+                        <div class="input">
+                            <label class="label bold" for="ciudad">Ciudad</label>
+                            <select type="password" class="input-style" id="ciudad">
+                                <option>--Seleccione una ciudad--</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="input-group input-group--tres">
+                        <div class="input">
+                            <label class="label bold" for="nombre">Digite el teléfono</label>
+                            <input type="text" class="input-style" id="nombre">
+                        </div>
+
+                        <div class="input">
+                            <label class="label bold" for="apellido">Seleccione el tipo de DNI</label>
+                            <input type="text" class="input-style" id="apellido">
+                        </div>
+
+                        <div class="input">
+                            <label class="label bold" for="apellido">Digite el apellido</label>
+                            <input type="text" class="input-style" id="apellido">
+                        </div>
+                    </div>
+
+                    <div class="check">
+                        <label class="check__terms" for="boxterm">Al hacer clic en <span class="check__textazul">"Registrarte"</span>, aceptas nuestras <span class="check__textazul">Condiciones,
+                            la Política de datos y la Política de cookies.</span></label>
+                        <input type="checkbox" id="boxterm">
+                    </div>
+
+                    <div class="captcha">
+                        <div class="g-recaptcha" data-sitekey="6Ld4COIaAAAAAKuRhDr3j6AaEPth0bjatnf6Rty_"></div>
+                        <br/>
+                        <!--<input type="submit" value="Submit">-->
+                    </div>
+
+                    <div class="grid__botones">
+                        <input type="submit" value="Registrarse" class="boton boton--primario">
+                        <a class="boton boton--secundario" href="#">Iniciar Sesión</a>
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+        
+    </div>
+    
+</body>
+</html>
