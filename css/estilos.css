@@ -112,6 +112,7 @@ img{
     .contenedor--form{
         width: min(60%, 120rem);
         margin: 0 auto;
+        
     }
 }
 
@@ -229,7 +230,7 @@ img{
     .grid__formulario--login{
         grid-column: 1 / 2;
     }
-    
+
 }
 
 .enlace{
@@ -243,6 +244,42 @@ img{
     display: block;
     width: 50%;
     margin: 0 auto 3rem auto;
+}
+
+/* //////////////// .Login /////////////////////////*/
+
+/* //////////////// .Recuperar Contraseña /////////////////////////*/
+
+.contenedor__pass{
+    max-width: 100rem;
+    margin: 10rem auto;
+    border: 1px solid #E1E1E1;
+    border-radius: 10px;
+    width: 75%;
+    -webkit-box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.17);
+    -moz-box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.17);
+    box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.17);
+    padding-bottom: 7rem;
+}
+
+.rcontra__logoazul{
+    width: 10rem;
+    margin: 7rem auto;
+    display: block;
+}
+
+.input-style--rcontra{
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+}
+
+.label--rcontra{
+    text-align: center;
+}
+
+.boton--rcontra{
+    margin-top: 5rem;
 }
 
 
