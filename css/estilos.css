@@ -248,7 +248,7 @@ img{
 
 /* //////////////// .Login /////////////////////////*/
 
-/* //////////////// .Recuperar Contraseña /////////////////////////*/
+/* //////////////// Recuperar Contraseña /////////////////////////*/
 
 .contenedor__pass{
     max-width: 100rem;
@@ -281,6 +281,72 @@ img{
 .boton--rcontra{
     margin-top: 5rem;
 }
+
+/* //////////////// .Recuperar Contraseña /////////////////////////*/
+
+/* //////////////// .Mantenimiento /////////////////////////*/
+
+.texto__azul{
+    font-family: var(--fuenteHeadings);
+    font-weight: 700;
+    color: var(--colorPrimarioOscuro);
+    font-size: 3rem;
+    text-align: center;
+}
+
+.texto__negro{
+    text-align: justify;
+    margin: 0 auto;
+}
+
+.texto__azul--grande{
+    font-size: 5rem;
+}
+
+.grid__contain--text{
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+
+@media (min-width: 768px) {
+    .layout__grid--maintenance{
+        margin-top: 12rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imagen__mantenimiento{
+        width: 90%;
+    }
+
+    .texto__azul{
+        font-size: 7rem;
+        line-height: 0.1;  
+    }
+    
+    
+    
+    
+    .texto__azul--grande{
+        font-size: 20rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
