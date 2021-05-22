@@ -4,11 +4,13 @@
     --fuenteParrafos: 'Open Sans', sans-serif;
     --fuenteRostros: 'Pattaya', sans-serif;
 
+
     --colorPrimario: #0DBDF5;
     --colorPrimarioOscuro: #13a5d1;
     --colorBlanco: #FFFFFF;
     --colorGris: #E1E1E1;
     --colorNegro: #000000;
+    --colorMorado: #5A4674;
 }
 
 html{
@@ -284,7 +286,7 @@ img{
 
 /* //////////////// .Recuperar Contraseña /////////////////////////*/
 
-/* //////////////// .Mantenimiento /////////////////////////*/
+/* //////////////// Mantenimiento /////////////////////////*/
 
 .texto__azul{
     font-family: var(--fuenteHeadings);
@@ -335,6 +337,69 @@ img{
         font-size: 20rem;
     }
 }
+
+/* //////////////// .Mantenimiento /////////////////////////*/
+
+/* //////////////// 404 /////////////////////////*/
+
+.background__nofound{
+    display: flex;
+    background-image: url(../img/fondo4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.nofound__titulo{
+    font-family: var(--fuenteHeadings);
+    font-weight: 700;
+    color: var(--colorBlanco);
+    font-size: 10rem;
+}
+
+.nofound__parrafo{
+    color: var(--colorBlanco);
+    font-size: 2rem;
+}
+
+.nofound__button{
+    padding: 1rem;
+    border-radius: 5rem;
+    background-color: transparent;
+    color: var(--colorBlanco);
+    border: 1px solid var(--colorBlanco);
+}
+
+@media (min-width: 768px) {
+      
+    .nofound__titulo{
+        font-size: 22rem;
+    }
+    
+    .nofound__parrafo{
+        color: var(--colorBlanco);
+        font-size: 5rem;
+    }
+    
+    .nofound__button{
+        padding: 2rem;
+        border-radius: 5rem;
+        background-color: transparent;
+        color: var(--colorBlanco);
+        border: 1px solid var(--colorBlanco);
+    }
+    
+    
+    .nofound__button:hover{
+        background-color: var(--colorBlanco);
+        color: var(--colorMorado);
+    }
+}
+
 
 
 
