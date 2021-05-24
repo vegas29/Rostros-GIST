@@ -9,6 +9,8 @@
     --colorPrimarioOscuro: #13a5d1;
     --colorBlanco: #FFFFFF;
     --colorGris: #E1E1E1;
+    --colorGrisOscuro: #808080;
+    --colorGrisOscuroBack: #9c9c9c;
     --colorNegro: #000000;
     --colorMorado: #5A4674;
 }
@@ -399,6 +401,81 @@ img{
         color: var(--colorMorado);
     }
 }
+
+/* //////////////// .404 /////////////////////////*/
+
+/* //////////////// Politicas y Servicios /////////////////////////*/
+
+    .grid__sidebarnav{
+        background-color: var(--colorGris);
+        text-align: center;
+    }
+
+    @media (min-width: 768px) {
+        .grid__sidebarnav{
+            padding: 5rem;
+            height: 100vh;
+            text-align: left;
+            font-size: 2rem;
+            font-family: var(--fuenteParrafos);
+        }
+    }
+
+
+    .block{
+        display: grid;
+        padding: 2rem;
+    }
+
+    .grid__enlace{
+        padding-left: 1rem;
+        color: var(--colorGrisOscuro);
+    }
+
+    a.grid__enlace:hover{
+        background-color: var(--colorGrisOscuroBack);
+        color: var(--colorBlanco);
+    }
+
+    .main__imagen{
+        display: block;
+        width: 18rem;
+        margin: 0 auto;
+    }
+
+    @media (min-width: 768px) {
+        .main__imagen{
+            width: 45rem;
+        }
+    }
+
+    /*Estilos acordeon*/
+
+    .accordion {
+        background-color: var(--colorGris);
+        color: #444;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        text-align: center;
+        border: none;
+        outline: none;
+        transition: 0.4s;
+    }
+    
+
+    .active, .accordion:hover {
+        background-color: var(--colorGrisOscuroBack);
+    }
+    
+    .panel {
+        padding: 0 18px;
+        background-color: var(--colorBlanco);
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+    }
+/* //////////////// .Politicas y Servicios /////////////////////////*/
 
 
 
