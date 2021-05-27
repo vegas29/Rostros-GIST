@@ -88,6 +88,14 @@ img{
     font-weight: bold;
 }
 
+.justify{
+    text-align: justify;
+}
+
+.line-height--1{
+    line-height: 1.5;
+}
+
 /* /////////////////// Registro ////////////////// */
 
 .contenedor,
@@ -555,6 +563,58 @@ img{
 
 
 /* //////////////// .Anatomía del Desaparecido /////////////////////////*/
+
+/* //////////////// Anatomias /////////////////////////*/
+
+.titulo__anatomia{
+    padding: 1rem 0 1rem 0;
+    background-color: var(--colorPrimarioOscuro);
+    border-radius: 5rem;
+    color: var(--colorBlanco);
+    font-size: 3rem;
+}
+
+
+@media (min-width: 768px) {
+    .titulo__anatomia{
+        padding: 2rem 0 2rem 0;
+        font-size: 5rem;
+        
+    }
+}
+
+
+.anatomias__titulo{
+    color: var(--colorPrimarioOscuro);
+    font-family: var(--fuenteRostros);
+}
+
+.anatomia__imagen{
+    display: block;
+    margin: 0 auto;
+}
+
+.card__anatomia{
+    height: 53rem;
+}
+
+.card__anatomia--45{
+    height: 45rem;
+}
+
+.card__anatomia--35{
+    height: 35rem;
+}
+
+.anatomia__section{
+    margin-bottom: 5rem;
+}
+
+p.justify.line-height--1{
+    font-size: 1.35rem;
+}
+
+/* //////////////// .Anatomias /////////////////////////*/
 
 
 
