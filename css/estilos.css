@@ -950,6 +950,9 @@ a.nav__enlace:last-of-type:hover{
 }
 
 
+
+
+
 @media (min-width: 768px) {
     .grid__footer{
         display: grid;
@@ -962,12 +965,18 @@ a.nav__enlace:last-of-type:hover{
     .titulo__footer{
         text-align: left;
     }
+
+    .titulo__footer--last{
+        text-align: right;
+    }
+
+    .footer__lista--last{
+        text-align: right;
+    }
     
 }
 
-.footer__sociales{
-    text-align: right;
-}
+
 
 .titulo__footer{
     color: var(--colorBlanco);
