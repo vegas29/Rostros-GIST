@@ -1007,7 +1007,53 @@ a.nav__enlace:last-of-type:hover{
     padding-bottom: 3rem;
 }
 
+/*Donaciones*/
 
+.banner__index--don{
+    background-image: url(../img/slider2.jpg);
+    height: 35vh;
+}
+
+@media (min-width: 768px) {
+    .banner__index--don{
+        height: 66vh;
+    }
+}
+
+
+
+.parrafo__banner--don{
+    padding-top: 15rem;
+    font-weight: 700;
+}
+
+.onda{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.grid__donacionimg{
+    width: 10rem;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .grid__donacionimg{
+        width: 30%;
+        margin: 0 auto;
+    }
+}
+
+.titulo__index--fs3{
+    font-size: 3rem;
+}
+
+.label__donacion{
+    color: var(--colorPrimario);
+    font-weight: 700;
+}
 
 
 /* //////////////// .Index /////////////////////////*/
