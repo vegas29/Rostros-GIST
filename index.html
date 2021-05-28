@@ -8,118 +8,171 @@
     <!--Fuentes externas-->
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans:wght@400;700&family=Pattaya&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans:wght@400;700&family=Pattaya&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 
     <!--.Fuentes externas-->
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/estilos.css">
-
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    <title>Rostros - Registro</title>
+    <title>Rostros - Index</title>
 </head>
 <body>
-    
-    <div class="layout__grid">
-        <div class="grid__sidebar">
-            <div class="contenedor">
-                <h4 class="text-rostros">Rostros</h4>
-                <p class="cita__sidebar">Nunca dejaremos de preocuparnos por ti!</p>
-                <img class="foto__sidebar" src="img/people_search.png" alt="Foto persona con lupa">
-            </div>
+    <nav class="nav__flex">
+        <div class="nav">
+            <a href="index.html"><img class="nav__imagen" src="img/logo.png" alt="Logo"> </a>
         </div>
 
-        <div class="grid__formulario">
-            <div class="contenedor--form">
-                <form>
-                    <h1 class="centrar-texto myt-7">Registrarse en Rostros</h1>
-                    <p class="centrar-texto bold">*Por favor complete el formulario*</p>
-                    <div class="input-group">
-                        <div class="input">
-                            <label class="label bold" for="nombre">Digite el nombre</label>
-                            <input type="text" class="input-style" id="nombre">
-                        </div>
+        <div class="nav__flex">
+            
+                <a class="nav__enlace" href="#">Inicio</a>
+                <a class="nav__enlace" href="#characters">Características</a>
+                <a class="nav__enlace" href="terminos.html">Términos</a>
+                <a class="nav__enlace" href="login.html">Iniciar sesión</a>
 
-                        <div class="input">
-                            <label class="label bold" for="apellido">Digite el apellido</label>
-                            <input type="text" class="input-style" id="apellido">
-                        </div>
-                    </div>
+        </div>
+    </nav>
 
-                    <div class="input">
-                        <label class="label bold" for="correo">Corrreo eléctronico</label>
-                        <input type="email" class="input-style input--alone" id="correo">
-                    </div>
+    <section class="banner__index">
+        <div class="negro"></div>
+        <div class="contenedor container--1200">
+            <h3 class="titulo__banner">Nunca paramos de preocuparnos</h3>
+            <p class="parrafo__banner">Somos una organización benéfica, que ayuda a las
+                personas afectadas por la desaparición de un ser
+                querido.
+            </p>
+        </div>
+    </section>
 
-                    <div class="input-group">
-                        <div class="input">
-                            <label class="label bold" for="password">Digite la contraseña</label>
-                            <input type="password" class="input-style" id="password">
-                        </div>
+    <section class="caracteristicas">
+        <div class="contenedor container--1200">
+            <h2 class="titulo__index">Caracteristicas</h2>
 
-                        <div class="input">
-                            <label class="label bold" for="rpassword">Digite de nuevo la contraseña</label>
-                            <input type="password" class="input-style" id="rpassword">
-                        </div>
-                    </div>
-                    
-                    <div class="input-group">
-                        <div class="input">
-                            <label class="label bold" for="pais">País</label>
-                            <select type="password" class="input-style" id="pais">
-                                <option>--Seleccione un pais--</option>
-                            </select>
-                        </div>
+            <div class="grid__character">
+                <div class="card card--character">
+                    <img class="character__img" src="img/layer.png" alt="Icono Layer">
 
-                        <div class="input">
-                            <label class="label bold" for="ciudad">Ciudad</label>
-                            <select  class="input-style" id="ciudad">
-                                <option>--Seleccione una ciudad--</option>
-                            </select>
-                        </div>
-                    </div>
+                    <p class="justify text__character">Iquam consectetur accumsan
+                        faucibus. Aliquam risus elit,
+                        scelerisque sed augue sit amet,
+                        porttitor dictum mauris.</p>
+                </div>
 
-                    <div class="input-group input-group--tres">
-                        <div class="input">
-                            <label class="label bold" for="tel">Digite el teléfono</label>
-                            <input type="tel" class="input-style" id="tel">
-                        </div>
+                <div class="card card--character">
+                    <img class="character__img" src="img/layer.png" alt="Icono Layer">
 
-                        <div class="input">
-                            <label class="label bold" for="dni">Seleccione el tipo de DNI</label>
-                            <select  class="input-style" id="dni">
-                                <option>--Seleccione un dni--</option>
-                            </select>
-                        </div>
+                    <p class="justify text__character">Iquam consectetur accumsan
+                        faucibus. Aliquam risus elit,
+                        scelerisque sed augue sit amet,
+                        porttitor dictum mauris.</p>
+                </div>
 
-                        <div class="input">
-                            <label class="label bold" for="apellido">Digite el no. de identificación</label>
-                            <input type="number" class="input-style" id="apellido">
-                        </div>
-                    </div>
+                <div class="card card--character">
+                    <img class="character__img" src="img/layer.png" alt="Icono Layer">
 
-                    <div class="check">
-                        <label class="check__terms" for="boxterm">Al hacer clic en <span class="check__textazul">"Registrarte"</span>, aceptas nuestras <span class="check__textazul">Condiciones,
-                            la Política de datos y la Política de cookies.</span></label>
-                        <input type="checkbox" id="boxterm">
-                    </div>
+                    <p class="justify text__character">Iquam consectetur accumsan
+                        faucibus. Aliquam risus elit,
+                        scelerisque sed augue sit amet,
+                        porttitor dictum mauris.</p>
+                </div>
+            </div>
+            
+        </div>
+    </section>
 
-                    <div class="captcha">
-                        <div class="g-recaptcha" data-sitekey="6Ld4COIaAAAAAKuRhDr3j6AaEPth0bjatnf6Rty_"></div>
-                        <br/>
-                        <!--<input type="submit" value="Submit">-->
-                    </div>
+    <section class="historia">
+        <div class="contenedor container--1200">
+            <h2 class="titulo__index">La historia no para aquí...</h2>
 
-                    <div class="grid__botones">
-                        <input type="submit" value="Registrarse" class="boton boton--primario">
-                        <a class="boton boton--secundario" href="#">Iniciar Sesión</a>
-                    </div>
-                    
-                </form>
+            <div class="grid">
+                <div class="grid__textobtn">
+                    <p class="text__grid">Ayúdanos proporcionando información acerca de las personas desaparecidas</p>
+                    <a class="btn__gridi btn__grid--left" href="#">Únete a la búsqueda</a>
+                </div>
+
+                <div class="grid__imageni">
+                    <img src="img/messaging.png" alt="Imagen Mensajes">
+                </div>
+            </div>
+
+            <hr class="line__historia">
+
+            <div class="grid grid__reverse">
+                <div class="grid__textobtn grid__textobtn--reverse">
+                    <p class="text__grid text__grid--reverse">Ayúdanos proporcionando información acerca de las personas desaparecidas</p>
+                    <a class="btn__gridi btn__gridi--reverse" href="#">Únete a la búsqueda</a>
+                </div>
+
+                <div class="grid__imageni grid__imageni--reverse">
+                    <img src="img/feedback.png" alt="Imagen Mensajes">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="apoyo">
+        <div class="contenedor container--1200">
+            <h2 class="titulo__index">Maneras de apoyarnos</h2>
+
+            <div class="grid__apoyo">
+                <div class="apoyo__item">
+                    <h3 class="titulo__index titulo__index--apoyo">Voluntario</h3>
+                    <img class="apoyo__img" src="img/clock.png" alt="Icono Reloj">
+                    <p class="apoyo__text">Regale su tiempo para ayudar a poner a salvo a las personas desaparecidas.</p>
+                    <a class="apoyo__enlace" href="#">Ser un voluntario</a>
+                </div>
+
+                <div class="apoyo__item">
+                    <h3 class="titulo__index titulo__index--apoyo">Donando</h3>
+                    <img class="apoyo__img" src="img/coins.png" alt="Icono Monedas">
+                    <p class="apoyo__text">Cualquier donación pequeña o grande, puede ayudarnos a seguir siendo un salvavidas 24/7.</p>
+                    <a class="apoyo__enlace" href="#">Haz un donativo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="contenedor container--1200">
+            <div class="grid__footer block__footer">
+                <div class="footer__rostros">
+                    <p class="titulo__footer">Rostros</p>
+                    <p>Street Address</p>
+                    <p>Street Address</p>
+                    <p>Street Address</p>
+                    <p>rostros@gmail.com</p>
+                </div>
+                <div class="footer__nav">
+                    <p class="titulo__footer">Navegación</p>
+                    <ul class="footer__lista">
+                        <li> <a href="#" class="footer__li">Inicio</a></li>
+                        <li> <a href="#" class="footer__li">Caracteristicas</a></li>
+                        <li> <a href="#" class="footer__li">Terminos</a></li>
+                        <li> <a href="#" class="footer__li">Iniciar sesion</a></li>
+                    </ul>
+                </div>
+                <div class="footer__nosotros">
+                    <p class="titulo__footer">Acerca de nosotros</p>
+        
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis quae perferendis necessitatibus quis ratione molestiae.</p>
+                </div>
+                <div class="footer__sociales">
+                    <p class="titulo__footer">Redes Sociales</p>
+        
+                    <ul class="footer__lista">
+                        <li> <a href="#" class="footer__li">Facebook</a></li>
+                        <li> <a href="#" class="footer__li">Instagram</a></li>
+                        <li> <a href="#" class="footer__li">Twitter</a></li>
+                        <li> <a href="#" class="footer__li">Gmail</a></li>   
+                    </ul>
+                </div> 
+            </div>
+            <div class="footer__enlace">
+                <p class="centrar-texto no-margin">2021 Rostros. Todos los derechos reservados</p>
             </div>
         </div>
         
-    </div>
+        
+    </footer>
     
 </body>
 </html>

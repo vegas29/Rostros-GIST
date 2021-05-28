@@ -37,6 +37,10 @@ body{
     margin: 0 auto;
 }
 
+.container--1200{
+    max-width: 120rem;
+}
+
 a{
     text-decoration: none;
 }
@@ -616,7 +620,388 @@ p.justify.line-height--1{
 
 /* //////////////// .Anatomias /////////////////////////*/
 
+/* //////////////// Index /////////////////////////*/
 
+/*Barra*/
+.nav{
+    width: 35%;
+    margin: 1rem auto;
+    cursor: pointer;
+}
+
+.nav__enlace{
+    display: block;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+
+    .nav{
+        margin: 1rem;
+    }
+
+    .nav__flex{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav__imagen{
+        width: 35%;
+    }
+
+}
+
+.nav__enlace{
+    text-decoration: none;
+    font-size: 2rem;
+    font-family: var(--fuenteParrafos);
+    font-weight: 700;
+    color: var(--colorGrisOscuro);
+}
+
+a.nav__enlace:hover{
+    color: var(--colorGris);
+}
+
+a.nav__enlace:last-of-type:hover{
+    background-color: var(--colorPrimario);
+    color: var(--colorBlanco);
+}
+
+@media (min-width: 768px) {
+    .nav__enlace{
+        margin-right: 3rem;
+    }
+}
+
+.nav__enlace:last-of-type{
+    border: 0.2rem solid var(--colorPrimario);
+    padding:0.5rem;
+    margin-right: 0;
+}
+
+/*.Barra*/
+
+/*Banner*/
+
+.banner__index{
+    background-image: url(../img/people.jpg);
+    height: 50vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.negro{
+    width: 100%;
+    opacity: 0.5;
+    height: 50VH;
+    background-color: var(--colorNegro);
+    position: absolute;
+}
+
+.titulo__banner{
+    text-align: center;
+    position: relative;
+    margin: 0;
+    padding-top: 5rem;
+    font-family: var(--fuenteHeadings);
+    color: var(--colorBlanco);
+    font-weight: 700;
+}
+
+.parrafo__banner{
+    position: relative;
+    color: var(--colorBlanco);
+    font-size: 1.5rem;
+    text-align: center;
+    
+}
+
+@media (min-width: 768px) {
+  .titulo__banner{
+      text-align: left;
+      padding-top: 10rem;
+      font-size: 4rem;
+  }
+
+  .parrafo__banner{
+      font-size: 3rem;
+      text-align: left;
+      width: 50%;
+  }
+}
+
+/*Caracteristicas*/
+
+.caracteristicas{
+    background-color: var(--colorGris);
+    padding: 5rem 0 7rem 0;
+}
+
+.titulo__index{
+    font-size: 3rem;
+    text-align: center;
+    color: var(--colorPrimario);
+    font-family: var(--fuenteHeadings);
+    font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .titulo__index{
+      font-size: 4rem;
+  }
+}
+
+.grid__character{
+    display: flex;
+    flex-direction: column;
+}
+
+.character__img{
+    padding-top: 0;
+    display: block;
+    width: 33%;
+    margin: 0 auto;
+}
+
+.card--character{
+    background-color: var(--colorBlanco);
+    margin-bottom: 3rem;
+}
+
+
+@media (min-width: 768px) {
+
+    .grid__character{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 5rem;
+    }
+    
+    .character__img{
+        padding-top: 5rem;
+        width: 20%;
+
+    }
+    
+    .card--character{
+        padding: 0;
+    }
+}
+
+.text__character{
+    padding: 0;
+}
+
+@media (min-width: 768px) {
+  .text__character{
+      padding: 5rem;
+  }
+}
+
+/*Historias*/
+
+.grid{
+    display: block;
+}
+
+.text__grid{
+    font-size: 2rem;
+    text-align: justify;
+}
+
+.btn__gridi{
+    padding: 1.6rem 4.2rem;
+    background-color: var(--colorPrimario);
+    border-radius: 5rem;
+    color: var(--colorBlanco);
+    font-weight: 700;
+    text-align: center;
+    display: block;
+    margin: 2rem  auto;
+}
+
+.grid__imageni{
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid: 3rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text__grid{
+        font-size: 2.2rem;
+    }
+
+    
+    .btn__gridi{
+        padding: 1.5rem 4rem;
+        background-color: var(--colorPrimario);
+        border-radius: 5rem;
+        color: var(--colorBlanco);
+        font-weight: 700;
+        display: inline-block;
+    }
+}
+
+.line__historia{
+    margin: 2rem 0;
+    border: 0.1rem solid var(--colorPrimario);
+}
+
+.text__grid--reverse{
+    text-align: right;
+}
+
+.btn__gridi--reverse{
+    float: right;
+}
+
+.btn__grid--left{
+    float: left;
+}
+
+@media (min-width: 768px) {
+    .grid__reverse{
+        grid-auto-flow: column;
+    }
+    .grid__textobtn--reverse{
+        grid-column: 2 / 3;
+    }
+
+    .grid__imageni--reverse{
+        grid-column: 1 / 2;
+    }
+}
+
+/*Apoyar*/
+
+.apoyo__img{
+    width: 15%;
+    display: block;
+    margin: 0 auto;
+}
+
+.apoyo__text{
+    display: block;
+    margin: 2rem auto;
+    width: 50%;
+    text-align: center;
+}
+
+.apoyo__enlace{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-family: var(--fuenteParrafos);
+    font-weight: 700;
+    color: var(--colorPrimario);
+    border-bottom: 0.3rem solid var(--colorPrimario);
+    width: 30%;
+}
+
+@media (min-width: 768px) {
+  .grid__apoyo{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 3rem;
+  }
+}
+
+.titulo__index--apoyo{
+    font-size: 2rem;
+}
+
+/*footer*/
+.footer{
+    margin-top: 5rem;
+    background-color: var(--colorPrimario);
+}
+
+.footer__enlace{
+    color: var(--colorBlanco);
+    font-weight: 700;
+}
+
+.block__footer{
+    display: block;
+    margin: 0 auto;
+}
+
+.footer__rostros,
+.titulo__footer{
+    text-align: center;
+}
+
+.footer__lista{
+    display: block;
+    padding:0 ;
+    list-style: none;
+    text-align: center;
+}
+
+
+@media (min-width: 768px) {
+    .grid__footer{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: space-between;
+    }
+
+    .footer__rostros,
+    .footer__lista,
+    .titulo__footer{
+        text-align: left;
+    }
+    
+}
+
+.footer__sociales{
+    text-align: right;
+}
+
+.titulo__footer{
+    color: var(--colorBlanco);
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.footer__rostros,
+.footer__nosotros{
+    color: var(--colorBlanco);
+}
+
+.footer__nav,
+.footer__sociales{
+    color: var(--colorBlanco);
+}
+
+.footer__li{
+    cursor: pointer;
+    color: var(--colorBlanco);
+}
+
+.footer__li:hover{
+    font-weight: 700;
+}
+
+.footer__enlace{
+    padding-bottom: 3rem;
+}
+
+
+
+
+/* //////////////// .Index /////////////////////////*/
 
 
 
