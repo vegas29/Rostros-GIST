@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rostros - Crear Desaparecido</title>
+
+    <!--Fuentes externas-->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans:wght@400;700&family=Pattaya&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+    <!--.Fuentes externas-->
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <div class="grid__desaparecido">
+        <aside class="grid__aside">
+
+            <a href="index.html"><img class="aside__imagen logo__aside" src="img/logoazulv.png" alt="Logo Rostros"></a>
+
+            <div class="item__aside">
+                <a href="index.html">
+                    <img class="aside__imagen" src="img/home.png" alt="Icono Home">
+                    <h3 class="titulo__aside centrar-texto">Inicio</h3>
+                </a>   
+            </div>
+
+            <div class="item__aside">
+                <a href="crear-desaparecido.html">
+                    <img class="aside__imagen" src="img/usersolid.png" alt="Icono User">
+                    <h3 class="titulo__aside centrar-texto">Reportar Desaparecido</h3>
+                </a>
+            </div>
+
+            <div class="item__aside">
+                <a href="ver-desaparecidos.html">
+                    <img class="aside__imagen" src="img/userfriends.png" alt="Icono Users">
+                    <h3 class="titulo__aside centrar-texto">Ver Desaparecidos</h3>
+                </a>
+            </div>
+
+            <div class="item__aside">
+                <a href="donaciones.html">
+                    <img class="aside__imagen" src="img/coinz.png" alt="Icono Coin">
+                    <h3 class="titulo__aside centrar-texto">Donar</h3>
+                </a>
+            </div>
+
+            <div class="item__aside">
+                <a href="centroayuda.html">
+                    <img class="aside__imagen" src="img/question.png" alt="Icono Question">
+                    <h3 class="titulo__aside centrar-texto">Ayuda</h3>
+                </a>  
+            </div>
+        </aside>
+
+        <div class="grid__main">
+            <nav class="flexbox">
+                <a class="label__nav" href="#">English<img class="flexbox__navimagen" src="img/language.png" alt="Icono Lenguaje"></a>
+                <a class="label__nav" href="#">Salir<img class="flexbox__navimagen flexbox__navimagen--sign" src="img/signout.png" alt="Icono Sign Out"></a>
+            </nav>
+
+            <div class="contenedor container--1200">
+                <h1 class="titulo__index">Solicitud del reporte desaparecido</h1>
+
+                <div class="tab">
+                    <button class="tablinks" onclick="openCity(event, 'ip')" id="defaultOpen">Informacion Personal</button>
+                    <button class="tablinks" onclick="openCity(event, 'cm')" id="caracteristicasM">Caracteristicas M</button>
+                    <button class="tablinks" onclick="openCity(event, 'cf')" id="caracteristicasF">Caracteristicas F</button>
+                    <button class="tablinks" onclick="openCity(event, 'ir')" id="informacionR">Informacion Relevante</button>
+                  </div>
+                  
+                  
+                  <div id="ip" class="tabcontent">
+                    <h2 class="titulo__index titulo__index--fs3 centrar-texto">Informacion Personal</h2>
+                    <img class="tab__imagen" src="img/female.png" alt="Icono Foto">
+                    <input type="file" accept="image/png, image/jpeg" class="subir__btn"></input>
+
+                    <!--Formulario-->
+
+                    <form class="grid__form container--80rem">
+                        <div class="input-group">
+                            <div class="input">
+                                <label class="label bold" for="pnombre">Primer nombre</label>
+                                <input type="text" class="input-style" id="fnombre">
+                            </div>
+    
+                            <div class="input">
+                                <label class="label bold" for="papellido">Primer apellido</label>
+                                <input type="text" class="input-style" id="papellido">
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <div class="input">
+                                <label class="label bold" for="snombre">Segundo nombre</label>
+                                <input type="text" class="input-style" id="snombre">
+                            </div>
+    
+                            <div class="input">
+                                <label class="label bold" for="sapellido">Segundo apellido</label>
+                                <input type="text" class="input-style" id="sapellido">
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <div class="input">
+                                <label class="label bold" for="nombre">Género</label>
+                                <select type="text" class="input-style" id="nombre">
+                                    <option>--Seleccione el genero--</option>
+                                </select>
+                            </div>
+    
+                            <div class="input">
+                                <label class="label bold" for="apellido">Fecha de nacimiento</label>
+                                <input type="date" class="input-style" id="apellido">
+                            </div>
+                        </div>
+
+                        <h3 class="centrar-texto titulo__index titulo__index--fs3">Ultima vez vista</h3>
+
+                        <div class="input-group">
+                            <div class="input">
+                                <label class="label bold" for="pais">Pais</label>
+                                <select type="text" class="input-style" id="pais">
+                                    <option>--Seleccione el pais--</option>
+                                </select>
+                            </div>
+    
+                            <div class="input">
+                                <label class="label bold" for="depart">Departamento</label>
+                                <select type="text" class="input-style" id="depart">
+                                    <option>--Seleccione el departamento--</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="input-group input-group--tres">
+                            <div class="input">
+                                <label class="label bold" for="ciudad">Ciudad</label>
+                                <select type="text" class="input-style" id="ciudad">
+                                    <option>--Seleccione la ciudad--</option>
+                                </select>
+                            </div>
+    
+                            <div class="input">
+                                <label class="label bold" for="zipcode">Zip Code</label>
+                                <input type="number" class="input-style" id="zipcode">
+                            </div>
+
+                            <div class="input">
+                                <label class="label bold" for="fechad">Fecha</label>
+                                <input type="date" class="input-style" id="fechad">
+                            </div>
+                        </div>
+
+                        <a onclick="openCity(event, 'cm')" class="subir__btn centrar-texto bold">Siguiente</a>
+
+                    </form>
+                  </div>
+                  
+                  <div id="cm" class="tabcontent">
+                    <h2 class="titulo__index titulo__index--fs3 centrar-texto">Caracteristicas Morfologicas</h2>
+                    
+                    <!--Formulario-->
+
+                    <form class="grid__form container--80rem">
+                        <div class="input-group">
+                            <div class="input">
+                                <label class="label bold" for="craneo">Craneo</label>
+                                <select type="text" class="input-style" id="craneo">
+                                    <option>--Seleccione el craneo--</option>
+                                </select>
+                            </div>
+    
+                            <div class="input">
+                                <label class="label bold" for="rostro">Rostro</label>
+                                <select type="text" class="input-style" id="rostro">
+                                    <option>--Seleccione el rostro--</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <div class="input">
+                                <label class="label bold" for="cuello">Cuello</label>
+                                <select type="text" class="input-style" id="cuello">
+                                    <option>--Seleccione el cuello--</option>
+                                </select>
+                            </div>
+    
+                            <div class="input">
+                                <label class="label bold" for="ojos">Ojos</label>
+                                <select type="text" class="input-style" id="ojos">
+                                    <option>--Seleccione los ojos--</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <div class="input">
+                                <label class="label bold" for="cuerpo">Cuerpo</label>
+                                <select type="text" class="input-style" id="cuerpo">
+                                    <option>--Seleccione el cuerpo--</option>
+                                </select>
+                            </div>
+    
+                            <div class="input">
+                                <label class="label bold" for="labios">Labios</label>
+                                <select type="text" class="input-style" id="labios">
+                                    <option>--Seleccione los labios--</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <div class="input">
+                                <label class="label bold" for="oreja">Orejas</label>
+                                <select type="text" class="input-style" id="oreja">
+                                    <option>--Seleccione las orejas--</option>
+                                </select>
+                            </div>
+    
+                            <div class="input">
+                                <label class="label bold" for="nariz">Nariz</label>
+                                <select type="text" class="input-style" id="nariz">
+                                    <option>--Seleccione la nariz--</option>
+                                </select>
+                            </div>
+                        </div>
+
+
+                        <a onclick="openCity(event, 'cf')" class="subir__btn centrar-texto bold">Siguiente</a>
+
+                    </form>
+                  </div>
+                  
+                  <div id="cf" class="tabcontent">
+                    <h2 class="titulo__index titulo__index--fs3 centrar-texto">Caracteristicas Fisicas</h2>
+                    
+                     <!--Formulario-->
+
+                     <form class="grid__form container--80rem">
+                        <div class="input-group">
+                            <div class="input">
+                                <label class="label bold" for="piel">Tipo de piel</label>
+                                <select type="text" class="input-style" id="piel">
+                                    <option>--Seleccione la piel--</option>
+                                </select>
+                            </div>
+    
+                            <div class="input">
+                                <label class="label bold" for="cpiel">Color de piel</label>
+                                <select type="text" class="input-style" id="cpiel">
+                                    <option>--Seleccione el color de piel--</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <div class="input">
+                                <label class="label bold" for="pigm">Pigmentacion</label>
+                                <select type="text" class="input-style" id="pigm">
+                                    <option>--Seleccione la pigmentacion--</option>
+                                </select>
+                            </div>
+    
+                            <div class="input">
+                                <label class="label bold" for="peso">Peso</label>
+                                <input type="number" class="input-style" id="peso">
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <div class="input">
+                                <label class="label bold" for="cabello">Cabello</label>
+                                <select type="text" class="input-style" id="cabello">
+                                    <option>--Seleccione el cabello--</option>
+                                </select>
+                            </div>
+    
+                            <div class="input">
+                                <label class="label bold" for="ccabello">Color Cabello</label>
+                                <select type="text" class="input-style" id="ccabello">
+                                    <option>--Seleccione el color del cabello--</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <div class="input">
+                                <label class="label bold" for="cojos">Color de ojos</label>
+                                <select type="text" class="input-style" id="cojos">
+                                    <option>--Seleccione el color de ojos--</option>
+                                </select>
+                            </div>
+    
+                            <div class="input">
+                                <label class="label bold" for="clabios">Color de labios</label>
+                                <select type="text" class="input-style" id="clabios">
+                                    <option>--Seleccione el color de labios--</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <div class="input">
+                                <label class="label bold" for="cojos">Estatura</label>
+                                <input type="number" class="input-style" id="cojos">
+                            </div>
+    
+                            <div class="input">
+                                <label class="label bold" for="cdientes">Color de dientes</label>
+                                <select type="text" class="input-style" id="cdientes">
+                                    <option>--Seleccione el color de dientes--</option>
+                                </select>
+                            </div>
+                        </div>
+
+
+                        <a onclick="openCity(event, 'ir')" class="subir__btn centrar-texto bold">Siguiente</a>
+                  </div>
+
+                  <div id="ir" class="tabcontent">
+                    <h2 class="titulo__index titulo__index--fs3 centrar-texto">Informacion Relevante</h2>
+
+                    <div class="container--80rem">
+                        <form class="block__form">
+                            <textarea class="description__ir" placeholder="Puedes describir:
+    
+                            Señales particulares: Cicatrices, lunares, tatuajes, antecedentes quirúrgicos
+                            (si lo tiene,  es deseable que aparezcan registrados en historia clínica), fracturas
+                            (si se tienen,  es deseable aportar radiografías), deformidades, entre otras.
+                            Es importante describir sin son visibles o no, si las tiene y si no las tiene.
+                            
+                            Prendas de vestir y pertenencias que portaba al momento de la 
+                            desaparición: Talla, marca, estado de las prendas, descripción general de las prendas
+                            y pertenencias."></textarea>
+
+                            <input type="submit" class="subir__btn centrar-texto bold">
+                        </form>
+                    </div>
+                    
+                   
+                  </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+    
+</body>
+</html>

@@ -41,6 +41,11 @@ body{
     max-width: 120rem;
 }
 
+.container--80rem{
+    max-width: 80rem;
+    margin: 0 auto;
+}
+
 a{
     text-decoration: none;
 }
@@ -158,9 +163,17 @@ img{
 }
 
 .input-group{
+    display: block;
+    margin: 0 auto;
+    
+}
+
+@media (min-width: 768px) {
+  .input-group{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
+  }
 }
 
 .input-group--tres{
@@ -1058,6 +1071,195 @@ a.nav__enlace:last-of-type:hover{
 
 /* //////////////// .Index /////////////////////////*/
 
+/* //////////////// Crear desaparecido /////////////////////////*/
+
+.grid__desaparecido{
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .grid__desaparecido{
+        display: grid;
+        grid-template-columns: 1fr 4fr
+    }
+}
+
+
+
+.grid__aside{
+    background-color: var(--colorPrimario);
+}
+
+.aside__imagen{
+    display: block;
+    margin: 1rem auto;
+    width: 5%;
+}
+
+
+@media (min-width: 768px) {
+    .aside__imagen{
+        margin: 2rem auto;
+        width: 18%;
+    }
+}
+
+.logo__aside{
+    padding-top: 1rem;
+    width: 12%;
+}
+
+@media (min-width: 768px) {
+    .logo__aside{
+        padding-top: 1rem;
+        width: 20%;
+    }
+}
+
+.titulo__aside{
+    color: var(--colorBlanco);
+    font-size: 2rem;
+}
+
+.item__aside{
+    padding: 1rem 0;
+}
+
+.item__aside:hover{
+    background-color: var(--colorPrimarioOscuro);
+}
+
+.flexbox{
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: 0.1rem solid var(--colorGris);
+}
+
+.label__nav{
+    padding: 3rem 0;
+    color: var(--colorPrimario);
+    font-size: 2rem;
+    font-weight: 700;
+    margin-right: 5rem;
+    text-align: center;
+    margin: 0;
+    width: 20rem;
+}
+
+.flexbox__navimagen{
+    width: 20%;
+    margin-left: 1rem;
+}
+
+.flexbox__navimagen--sign{
+    width: 12%;
+}
+
+/*Tabs*/
+
+.tab{
+    overflow: hidden;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .tab{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+.tablinks{
+    background-color: transparent;
+    border:none;
+    cursor: pointer;
+    color:var(--colorPrimario);
+    transition: 0.3s;
+    padding: 3rem;
+}
+
+@media (min-width: 768px) {
+    .tablinks{
+        padding: 2rem;
+    }
+}
+
+.tablinks:hover{
+    border-bottom: 0.2rem solid var(--colorPrimario);
+}
+
+.tab button.actives {
+    background-color:var(--colorPrimario);
+}
+
+.tabcontent {
+    animation: fadeEffect 1s; 
+  }
+  
+  @keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+  .tab__imagen{
+    display: block;
+    margin: 0 auto;
+    width: 10rem;
+  }
+
+  @media (min-width: 768px) {
+    .tab__imagen{ 
+        width: 20rem;
+    }
+  }
+
+  .subir__btn{
+      display: block;
+      font-size: 1rem;
+      padding: 1rem 1rem;
+      margin: 1rem auto;
+      background-color: var(--colorPrimario);
+      color: var(--colorBlanco);
+      border: none;
+      border-radius: 5rem;
+      cursor: pointer;
+  }
+
+  @media (min-width: 768px) {
+    .subir__btn{
+        margin: 3rem auto;
+        padding: 1rem 7rem;
+        font-size: 1.5rem;
+    }
+  }
+
+  .subir__btn:hover{
+      background-color: var(--colorPrimarioOscuro);
+  }
+
+  .input-group--tres{
+      grid-template-columns: repeat(3, 1fr);
+  }
+
+  .block__form{
+      display: block;
+      margin: 0 auto;
+  }
+
+  .description__ir{
+    height: 30rem;
+    width: 100%;
+  }
+  
+
+  
+
+
+
+/* //////////////// .Crear desaparecido /////////////////////////*/
 
 
 
