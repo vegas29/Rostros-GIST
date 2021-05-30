@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rostros - Item Desaparecido</title>
+
+    <!--Fuentes externas-->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans:wght@400;700&family=Pattaya&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+    <!--.Fuentes externas-->
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <div class="grid__desaparecido">
+        <aside class="grid__aside">
+
+            <a href="index.html"><img class="aside__imagen logo__aside" src="img/logoazulv.png" alt="Logo Rostros"></a>
+
+            <div class="item__aside">
+                <a href="index.html">
+                    <img class="aside__imagen" src="img/home.png" alt="Icono Home">
+                    <h3 class="titulo__aside centrar-texto">Inicio</h3>
+                </a>   
+            </div>
+
+            <div class="item__aside">
+                <a href="crear-desaparecido.html">
+                    <img class="aside__imagen" src="img/usersolid.png" alt="Icono User">
+                    <h3 class="titulo__aside centrar-texto">Reportar Desaparecido</h3>
+                </a>
+            </div>
+
+            <div class="item__aside">
+                <a href="ver-desaparecidos.html">
+                    <img class="aside__imagen" src="img/userfriends.png" alt="Icono Users">
+                    <h3 class="titulo__aside centrar-texto">Ver Desaparecidos</h3>
+                </a>
+            </div>
+
+            <div class="item__aside">
+                <a href="donaciones.html">
+                    <img class="aside__imagen" src="img/coinz.png" alt="Icono Coin">
+                    <h3 class="titulo__aside centrar-texto">Donar</h3>
+                </a>
+            </div>
+
+            <div class="item__aside">
+                <a href="centroayuda.html">
+                    <img class="aside__imagen" src="img/question.png" alt="Icono Question">
+                    <h3 class="titulo__aside centrar-texto">Ayuda</h3>
+                </a>  
+            </div>
+        </aside>
+
+        <div class="grid__main">
+            <nav class="flexbox">
+                <a class="label__nav" href="#">English<img class="flexbox__navimagen" src="img/language.png" alt="Icono Lenguaje"></a>
+                <a class="label__nav" href="#">Salir<img class="flexbox__navimagen flexbox__navimagen--sign" src="img/signout.png" alt="Icono Sign Out"></a>
+            </nav>
+
+            <div class="contenedor container--1200">
+                <h1 class="titulo__index">Solicitud del reporte desaparecido</h1>
+
+                <div class="tab">
+                    <button class="tablinks" onclick="openCity(event, 'ip')" id="defaultOpen">Informacion Personal</button>
+                    <button class="tablinks" onclick="openCity(event, 'cm')" id="caracteristicasM">Caracteristicas M</button>
+                    <button class="tablinks" onclick="openCity(event, 'cf')" id="caracteristicasF">Caracteristicas F</button>
+                    <button class="tablinks" onclick="openCity(event, 'ir')" id="informacionR">Informacion Relevante</button>
+                  </div>
+                   
+                  
+                  <div id="ip" class="tabcontent">
+                    <h2 class="titulo__index titulo__index--fs3 centrar-texto">Informacion Personal</h2>
+                    <img class="tab__imagen" src="img/male.jpg" alt="Icono Foto">
+
+                    <!--Formulario-->
+
+                    <form class="grid__form container--80rem">
+                        <div class="input-group">
+                            <div class="input">
+                                <label class="label bold centrar-texto" for="pnombre">Primer nombre</label>
+                                <p class="centrar-texto">June</p>
+                            </div>
+    
+                            <div class="input">
+                                <label class="label bold centrar-texto" for="papellido">Primer apellido</label>
+                                <p class="centrar-texto">N</p>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <div class="input">
+                                <label class="label bold centrar-texto" for="snombre">Segundo nombre</label>
+                                <p class="centrar-texto">Dorie</p>
+                            </div>
+    
+                            <div class="input">
+                                <label class="label bold centrar-texto" for="sapellido">Segundo apellido</label>
+                                <p class="centrar-texto">N</p>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <div class="input">
+                                <label class="label bold centrar-texto" for="nombre">Género</label>
+                                <p class="centrar-texto">Femenino</p>
+                            </div>
+    
+                            <div class="input">
+                                <label class="label bold centrar-texto" for="apellido">Fecha de nacimiento</label>
+                                <p class="centrar-texto">29/01/1999</p>
+                            </div>
+                        </div>
+
+                        <h3 class="centrar-texto titulo__index titulo__index--fs3">Ultima vez vista</h3>
+
+                        <div class="input-group">
+                            <div class="input">
+                                <label class="label bold centrar-texto" for="pais">Pais</label>
+                                <p class="centrar-texto">Colombia</p>
+                            </div>
+    
+                            <div class="input">
+                                <label class="label bold centrar-texto" for="depart">Departamento</label>
+                                <p class="centrar-texto">Huila</p>
+                            </div>
+                        </div>
+
+                        <div class="input-group input-group--tres">
+                            <div class="input">
+                                <label class="label bold centrar-texto" for="ciudad">Ciudad</label>
+                                <p class="centrar-texto">Neiva</p>
+                            </div>
+    
+                            <div class="input">
+                                <label class="label bold centrar-texto" for="zipcode">Zip Code</label>
+                                <p class="centrar-texto">410006</p>
+                            </div>
+
+                            <div class="input">
+                                <label class="label bold centrar-texto" for="fechad">Fecha</label>
+                                <p class="centrar-texto">30/05/2021</p>
+                            </div>
+                        </div>
+
+                        <a onclick="openCity(event, 'cm')" class="subir__btn centrar-texto bold">Siguiente</a>
+
+                        <a class="subir__btn centrar-texto bold subir__btn--verde">Marcar como encontrada</a>
+
+                    </form>
+                  </div>
+                  
+                  <div id="cm" class="tabcontent">
+                    <h2 class="titulo__index titulo__index--fs3 centrar-texto">Caracteristicas Morfologicas</h2>
+                    
+                    <!--Formulario-->
+
+                    <form class="grid__form container--80rem">
+                        <div class="input-group">
+                            <div class="input">
+                                <label class="label bold centrar-texto" for="craneo">Craneo</label>
+                                <p class="centrar-texto">Dolicocefalia</p>
+                            </div>
+    
+                            <div class="input">
+                                <label class="label bold centrar-texto" for="rostro">Rostro</label>
+                                <p class="centrar-texto">Ovalado</p>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <div class="input">
+                                <label class="label bold centrar-texto" for="cuello">Cuello</label>
+                                <p class="centrar-texto">Largo</p>
+                            </div>
+    
+                            <div class="input">
+                                <label class="label bold centrar-texto" for="ojos">Ojos</label>
+                                <p class="centrar-texto">Ovalado</p>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <div class="input">
+                                <label class="label bold centrar-texto" for="cuerpo">Cuerpo</label>
+                                <p class="centrar-texto">Endomorfo</p>
+                            </div>
+    
+                            <div class="input">
+                                <label class="label bold centrar-texto" for="labios">Labios</label>
+                                <p class="centrar-texto">Gruesos</p>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <div class="input">
+                                <label class="label bold centrar-texto" for="oreja">Orejas</label>
+                                <p class="centrar-texto">Verticales</p>
+                            </div>
+    
+                            <div class="input">
+                                <label class="label bold centrar-texto"  for="nariz">Nariz</label>
+                                <p class="centrar-texto">Bonita</p>
+                            </div>
+                        </div>
+
+
+                        <a onclick="openCity(event, 'cf')" class="subir__btn centrar-texto bold">Siguiente</a>
+
+                    </form>
+                  </div>
+                  
+                  <div id="cf" class="tabcontent">
+                    <h2 class="titulo__index titulo__index--fs3 centrar-texto">Caracteristicas Fisicas</h2>
+                    
+                     <!--Formulario-->
+
+                     <form class="grid__form container--80rem">
+                        <div class="input-group">
+                            <div class="input">
+                                <label class="label bold centrar-texto" for="piel">Tipo de piel</label>
+                                <p class="centrar-texto">Morena</p>
+                            </div>
+    
+                            <div class="input">
+                                <label class="label bold centrar-texto" for="cpiel">Color de piel</label>
+                                <p class="centrar-texto">Morena</p>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <div class="input">
+                                <label class="label bold centrar-texto" for="pigm">Pigmentacion</label>
+                                <p class="centrar-texto">Puntos rojos</p>
+                            </div>
+    
+                            <div class="input">
+                                <label class="label bold centrar-texto" for="peso">Peso</label>
+                                <p class="centrar-texto">1.68</p>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <div class="input">
+                                <label class="label bold centrar-texto" for="cabello">Cabello</label>
+                                <p class="centrar-texto">Ondulado</p>
+                            </div>
+    
+                            <div class="input">
+                                <label class="label bold centrar-texto" for="ccabello">Color Cabello</label>
+                                <p class="centrar-texto">Negro</p>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <div class="input">
+                                <label class="label bold centrar-texto" for="cojos">Color de ojos</label>
+                                <p class="centrar-texto">Verdes</p>
+                            </div>
+    
+                            <div class="input">
+                                <label class="label bold centrar-texto" for="clabios">Color de labios</label>
+                                <p class="centrar-texto">Rojo intenso</p>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <div class="input">
+                                <label class="label bold centrar-texto" for="cojos">Estatura</label>
+                                <p class="centrar-texto">1.67</p>
+                            </div>
+    
+                            <div class="input">
+                                <label class="label bold centrar-texto" for="cdientes">Color de dientes</label>
+                                <p class="centrar-texto">Amarillos</p>
+                            </div>
+                        </div>
+
+
+                        <a onclick="openCity(event, 'ir')" class="subir__btn centrar-texto bold">Siguiente</a>
+                  </div>
+
+                  <div id="ir" class="tabcontent">
+                    <h2 class="titulo__index titulo__index--fs3 centrar-texto">Informacion Relevante</h2>
+
+                    <div class="container--80rem">
+                        <form class="block__form">
+                         <p class="centrar-texto">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                         </p>
+
+                         <a onclick="openCity(event, 'cf')" class="subir__btn centrar-texto bold">Anterior</a>
+                        </form>
+                    </div>
+                    
+                   
+                </div>
+
+                <!--Comentarios-->
+
+                <section class="comentarios contenedor container--80rem">
+                    <h3 class="centrar-texto titulo__index titulo__index--fs3">Comentarios</h3>
+
+                    <!--Comentario-->
+
+                    <div class="grid grid__comentario">
+                        <div class="comentario__imagen">
+                            <img class="comentario__img" src="img/male.jpg" alt="Icono Foto">
+                        </div>
+
+                        <div class="comentario__texto">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim deserunt voluptatibus ducimus ex eos vel impedit veniam tempore, illo, dolorem asperiores quasi. Quam saepe dolores voluptatem quisquam accusamus esse cum.</p>
+                            <span class="italic">Hace un instante</span>
+                        </div>
+                    </div>
+
+                    <div class="grid grid__comentario">
+                        <div class="comentario__imagen">
+                            <img class="comentario__img" src="img/male.jpg" alt="Icono Foto">
+                        </div>
+
+                        <div class="comentario__texto">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim deserunt voluptatibus ducimus ex eos vel impedit veniam tempore, illo, dolorem asperiores quasi. Quam saepe dolores voluptatem quisquam accusamus esse cum.</p>
+                            <span class="italic">Hace un instante</span>
+                        </div>
+                    </div>
+
+                    <div class="grid grid__comentario">
+                        <div class="comentario__imagen">
+                            <img class="comentario__img" src="img/male.jpg" alt="Icono Foto">
+                        </div>
+
+                        <div class="comentario__texto">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim deserunt voluptatibus ducimus ex eos vel impedit veniam tempore, illo, dolorem asperiores quasi. Quam saepe dolores voluptatem quisquam accusamus esse cum.</p>
+                            <span class="italic">Hace un instante</span>
+                        </div>
+                    </div>
+
+
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+    
+</body>
+</html>

@@ -13,6 +13,7 @@
     --colorGrisOscuroBack: #9c9c9c;
     --colorNegro: #000000;
     --colorMorado: #5A4674;
+    --btnVerde: #00B217;
 }
 
 html{
@@ -45,6 +46,8 @@ body{
     max-width: 80rem;
     margin: 0 auto;
 }
+
+
 
 a{
     text-decoration: none;
@@ -95,6 +98,10 @@ img{
 
 .bold{
     font-weight: bold;
+}
+
+.italic{
+    font-style: italic;
 }
 
 .justify{
@@ -1208,6 +1215,8 @@ a.nav__enlace:last-of-type:hover{
     display: block;
     margin: 0 auto;
     width: 10rem;
+    margin-bottom: 3rem;
+    border-radius: 50%;
   }
 
   @media (min-width: 768px) {
@@ -1261,6 +1270,34 @@ a.nav__enlace:last-of-type:hover{
 
 /* //////////////// .Crear desaparecido /////////////////////////*/
 
+/* //////////////// Item desaparecido /////////////////////////*/
+
+.subir__btn--verde{
+    background-color: var(--btnVerde);
+}
+
+/*Comentario*/
+
+.grid__comentario{
+  grid-template-columns: 1fr 4fr;
+  gap: 2rem;
+  border: 0.1rem solid var(--colorPrimario);
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+.comentario__img{
+    border-radius: 50%;
+    height: 10rem;
+    width: 10rem;
+}
+
+@media (min-width: 768px) {
+ 
+}
+
+/* //////////////// .Item desaparecido /////////////////////////*/
 
 
 
