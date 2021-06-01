@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rostros - Panel Administración / Ver Comentarios</title>
+
+    <!--Fuentes externas-->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans:wght@400;700&family=Pattaya&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+    <!--.Fuentes externas-->
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <div class="grid__desaparecido">
+        <aside class="grid__aside">
+
+            <a href="index.html"><img class="aside__imagen logo__aside" src="img/logoazulv.png" alt="Logo Rostros"></a>
+
+            <div class="item__aside">
+                <a href="index.html">
+                    <img class="aside__imagen" src="img/home.png" alt="Icono Home">
+                    <h3 class="titulo__aside centrar-texto">Inicio</h3>
+                </a>   
+            </div>
+
+            <div class="item__aside">
+                <a href="crear-desaparecido.html">
+                    <img class="aside__imagen" src="img/usersolid.png" alt="Icono User">
+                    <h3 class="titulo__aside centrar-texto">Reportar Desaparecido</h3>
+                </a>
+            </div>
+
+            <div class="item__aside">
+                <a href="ver-desaparecidos.html">
+                    <img class="aside__imagen" src="img/userfriends.png" alt="Icono Users">
+                    <h3 class="titulo__aside centrar-texto">Ver Desaparecidos</h3>
+                </a>
+            </div>
+
+            <div class="item__aside">
+                <a href="donaciones.html">
+                    <img class="aside__imagen" src="img/coinz.png" alt="Icono Coin">
+                    <h3 class="titulo__aside centrar-texto">Donar</h3>
+                </a>
+            </div>
+
+            <div class="item__aside">
+                <a href="centroayuda.html">
+                    <img class="aside__imagen" src="img/question.png" alt="Icono Question">
+                    <h3 class="titulo__aside centrar-texto">Ayuda</h3>
+                </a>  
+            </div>
+        </aside>
+
+        <div class="grid__main">
+            <nav class="flexbox">
+                <a class="label__nav" href="#"><img class="flexbox__navimagen flexbox__navimagen--bell centrar-texto" src="img/bell.png" alt="Icono Campana"></a>
+                <a class="label__nav" href="#">English<img class="flexbox__navimagen" src="img/language.png" alt="Icono Lenguaje"></a>
+                <a class="label__nav" href="#">Salir<img class="flexbox__navimagen flexbox__navimagen--sign" src="img/signout.png" alt="Icono Sign Out"></a>
+                
+            </nav>
+
+            <div class="search">
+                <input class="input__search" type="search" placeholder="Consulte por el nombre">
+                <button class="btn__search"><img class="search__img" src="img/search.png"></button>                
+            </div>
+
+            <div class="filter">
+                <div class="filter__checks">
+                    <button><img class="filter__img" src="img/filter.png"></button>
+                    <input type="checkbox" name="asc" id="asc">Más reciente
+                    <input type="checkbox" name="des" id="desc">Más antigua
+                </div>
+            </div>
+
+            <!--Comentarios-->
+
+            <section class="comentarios contenedor container--80rem">
+                <h3 class="centrar-texto titulo__index titulo__index--fs3">Comentarios</h3>
+
+                <!--Comentario-->
+
+                <div class="grid grid__comentario">
+                    <div class="comentario__imagen">
+                        <img class="comentario__img" src="img/male.jpg" alt="Icono Foto">
+                    </div>
+
+                    <div class="comentario__texto">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim deserunt voluptatibus ducimus ex eos vel impedit veniam tempore, illo, dolorem asperiores quasi. Quam saepe dolores voluptatem quisquam accusamus esse cum.</p>
+                        <span class="italic">Hace un instante</span>
+                    </div>
+                    <a class="subir__btn subir__btn--rojo centrar-texto bold subir__btn--100">Eliminar</a>
+                </div>
+
+                <div class="grid grid__comentario">
+                    <div class="comentario__imagen">
+                        <img class="comentario__img" src="img/male.jpg" alt="Icono Foto">
+                    </div>
+
+                    <div class="comentario__texto">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim deserunt voluptatibus ducimus ex eos vel impedit veniam tempore, illo, dolorem asperiores quasi. Quam saepe dolores voluptatem quisquam accusamus esse cum.</p>
+                        <span class="italic">Hace un instante</span>
+                    </div>
+                    <a class="subir__btn subir__btn--rojo centrar-texto bold subir__btn--100">Eliminar</a>
+                </div>
+
+                <div class="grid grid__comentario">
+                    <div class="comentario__imagen">
+                        <img class="comentario__img" src="img/male.jpg" alt="Icono Foto">
+                    </div>
+
+                    <div class="comentario__texto">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim deserunt voluptatibus ducimus ex eos vel impedit veniam tempore, illo, dolorem asperiores quasi. Quam saepe dolores voluptatem quisquam accusamus esse cum.</p>
+                        <span class="italic">Hace un instante</span>
+                    </div>
+
+                    <a class="subir__btn subir__btn--rojo centrar-texto bold subir__btn--100">Eliminar</a>
+                </div>
+                
+
+
+            </section>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+    
+</body>
+</html>
