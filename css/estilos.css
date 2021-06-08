@@ -151,7 +151,7 @@ img{
         background-color: var(--colorPrimario);  
         color: var(--colorBlanco);
         padding: 4rem;
-        height: 110vh;
+        height: 100%;
     }
     
     .contenedor--form{
@@ -461,12 +461,17 @@ img{
     }
 
     @media (min-width: 768px) {
+
         .grid__sidebarnav{
             padding: 5rem;
-            height: 100vh;
+            height: 100%;
             text-align: left;
             font-size: 2rem;
             font-family: var(--fuenteParrafos);
+        }
+
+        .grid__sidebarnav--100hv{
+            height: 100vh;
         }
     }
 
@@ -539,7 +544,7 @@ img{
 
     @media (min-width: 768px) {
         .grid__sidebarnav--terminos{
-            height: 125vh;
+            height: 100%;
         } 
     }
      
@@ -595,7 +600,7 @@ img{
     }
 
     .grid__sidebarnav--ana{
-        height: 150vh;
+        height: 100%;
     }
 }
 
@@ -1054,6 +1059,12 @@ a.nav__enlace:last-of-type:hover{
 @media (min-width: 768px) {
     .banner__index--don{
         height: 66vh;
+    }
+}
+
+@media (min-width: 992px) {
+    .banner__index--don{
+        height: 71vh;
     }
 }
 
