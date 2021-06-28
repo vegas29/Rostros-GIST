@@ -19,6 +19,7 @@
 }
 
 html{
+    scroll-behavior: smooth;
     box-sizing: border-box;
     font-size: 62.5%; /*10px equivalen a 10rem*/
 }
@@ -31,6 +32,16 @@ body{
     font-family: var(--fuenteParrafos);
     font-size: 1.6rem;
     line-height: 2;
+}
+
+input:focus{
+    border: 2px solid var(--colorPrimarioOscuro);
+    outline: 0 none;
+}
+
+input:active{
+    border: 2px solid var(--colorPrimarioOscuro);
+    outline: 0 none;
 }
 
 /* Estilos Globales */
@@ -156,7 +167,7 @@ img{
     
     .contenedor--form{
         width: min(60%, 120rem);
-        margin: 0 auto;
+        margin: 20rem auto;
         
     }
 }
@@ -270,7 +281,6 @@ img{
 
 @media (min-width: 768px) {
     .layout__grid--login{
-        
         grid-template-columns: 2fr 1fr;
         grid-auto-flow: column;
     }
