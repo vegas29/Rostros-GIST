@@ -3,7 +3,7 @@
     --fuenteTerminos: 'Montserrat', sans-serif;
     --fuenteParrafos: 'Open Sans', sans-serif;
     --fuenteRostros: 'Pattaya', sans-serif;
-
+    --fuenteMant: 'Sriracha', cursive;
 
     --colorPrimario: #0DBDF5;
     --colorPrimarioOscuro: #13a5d1;
@@ -145,6 +145,7 @@ img{
 .contenedor,
 .contenedor--form{
     width: 90%;
+    display: block;
     margin: 0 auto;
 }
 
@@ -166,8 +167,8 @@ img{
     }
     
     .contenedor--form{
-        width: min(60%, 120rem);
-        margin: 20rem auto;
+        height: 100%;
+        justify-content: center;
         
     }
 }
@@ -186,7 +187,16 @@ img{
 }
 
 .foto__sidebar{
-    margin-top: 3rem;
+    margin-top: 3rem;  
+    width: 50%; 
+    display: block;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .foto__sidebar{
+        width: 90%;
+    }
 }
 
 .label{
@@ -218,9 +228,10 @@ img{
 
 .input-style{
     width: 100%;
-    height: 5rem;
+    height: 4rem;
     background-color: var(--colorGris);
     border: none;
+    border-radius: 5px;
 }
 
 .check{
@@ -245,7 +256,7 @@ img{
 }
 
 .boton{
-    padding: 2rem;
+    padding: 1.2rem;
     border: none;
 }
 
@@ -279,6 +290,14 @@ img{
 
 /* //////////////// Login /////////////////////////*/
 
+.formulario{
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+}
+
+
+
 @media (min-width: 768px) {
     .layout__grid--login{
         grid-template-columns: 2fr 1fr;
@@ -301,6 +320,10 @@ img{
     color: var(--colorNegro);
     text-align: center;
     margin-bottom: 3rem;
+}
+
+.enlace:hover{
+    color: var(--colorPrimario);
 }
 
 .centrar-bloque{
@@ -350,11 +373,29 @@ img{
 /* //////////////// Mantenimiento /////////////////////////*/
 
 .texto__azul{
-    font-family: var(--fuenteHeadings);
+    font-family: var(--fuenteMant);
     font-weight: 700;
     color: var(--colorPrimarioOscuro);
-    font-size: 3rem;
+    font-size: 5rem;
     text-align: center;
+    margin: 0;
+    line-height: 2;
+}
+
+.texto__azul--grande{
+    font-size: 7rem;
+    margin: 0;
+}
+
+@media (min-width: 768px) {
+    .texto__azul{
+        font-size: 8rem;
+        line-height: 1.5;
+    }
+
+    .texto__azul--grande{
+        font-size: 18rem;
+    }
 }
 
 .texto__negro{
@@ -362,19 +403,42 @@ img{
     margin: 0 auto;
 }
 
-.texto__azul--grande{
-    font-size: 5rem;
-}
-
 .grid__contain--text{
     max-width: 70%;
     margin: 0 auto;
 }
 
+.grid__imagen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-@media (min-width: 768px) {
+.imagen__mantenimiento{
+    max-width: 70%;
+}
+
+.layout__grid--maintenance{
+    max-width: 90%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+@media (min-width: 480px) {
     .layout__grid--maintenance{
-        margin-top: 12rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 992px) {
+    .layout__grid--maintenance{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
@@ -383,20 +447,11 @@ img{
     }
 
     .imagen__mantenimiento{
-        width: 90%;
-    }
-
-    .texto__azul{
-        font-size: 7rem;
-        line-height: 0.1;  
+        max-width: 80%;
+        display: block;
+        margin: 0 auto;
     }
     
-    
-    
-    
-    .texto__azul--grande{
-        font-size: 20rem;
-    }
 }
 
 /* //////////////// .Mantenimiento /////////////////////////*/
@@ -572,6 +627,7 @@ img{
     display: grid;
     justify-content: center;
     gap: 2rem;
+    margin-bottom: 5rem ;
 }
 
 .card{
@@ -589,19 +645,37 @@ img{
 .card__imagen{
     display: block;
     width: 50%;
+    height: 15vh;
     margin: 0 auto;
 }
 
-.card__imagen--40{
+/*.card__imagen--40{
     width: 42%;
 }
 
 .card__imagen--60{
     width: 60%;
+}*/
+
+@media (min-width: 480px) {
+    .anatomias__card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .grid__sidebarnav--ana{
+        height: 100%;
+    }
+
+    .card__imagen{
+        height: 100%;
+    }
+
 }
 
-
-@media (min-width: 768px) {
+@media (min-width: 992px) {
     .anatomias__card{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -611,6 +685,17 @@ img{
 
     .grid__sidebarnav--ana{
         height: 100%;
+    }
+
+    .card__imagen{
+        height: 10vh;
+    }
+
+}
+
+@media (min-width: 1400px) {
+    .card__imagen{
+        height: 15vh;
     }
 }
 
@@ -639,7 +724,6 @@ img{
     }
 }
 
-
 .anatomias__titulo{
     color: var(--colorPrimarioOscuro);
     font-family: var(--fuenteRostros);
@@ -651,15 +735,31 @@ img{
 }
 
 .card__anatomia{
-    height: 53rem;
+    height: 40rem;
 }
 
-.card__anatomia--45{
-    height: 45rem;
+@media (min-width: 480px) {
+    .card__anatomia{
+        height: 40rem;
+    }
 }
 
-.card__anatomia--35{
-    height: 35rem;
+@media (min-width: 992px) {
+    .card__anatomia{
+        height: 65rem;
+    }
+
+    .card__anatomia--45{
+        height: 64rem;
+    }
+
+    .card__anatomia--35{
+        height: 45rem;
+    }
+
+    .card__anatomia--55{
+        height: 73rem;
+    }
 }
 
 .anatomia__section{
@@ -676,8 +776,8 @@ p.justify.line-height--1{
 
 /*Barra*/
 .nav{
-    width: 35%;
-    margin: 1rem auto;
+    max-width: 25%;
+    margin: 1.5rem auto;
     cursor: pointer;
 }
 
@@ -713,7 +813,7 @@ p.justify.line-height--1{
 }
 
 a.nav__enlace:hover{
-    color: var(--colorGris);
+    color: var(--colorPrimario);
 }
 
 a.nav__enlace:last-of-type:hover{
@@ -748,7 +848,7 @@ a.nav__enlace:last-of-type:hover{
 .negro{
     width: 100%;
     opacity: 0.5;
-    height: 50VH;
+    height: 50vh;
     background-color: var(--colorNegro);
     position: absolute;
 }
@@ -761,13 +861,16 @@ a.nav__enlace:last-of-type:hover{
     font-family: var(--fuenteHeadings);
     color: var(--colorBlanco);
     font-weight: 700;
+    font-size: 3rem;
 }
 
 .parrafo__banner{
     position: relative;
     color: var(--colorBlanco);
-    font-size: 1.5rem;
+    font-size: 2.2rem;
+    font-family: var(--fuenteMant);
     text-align: center;
+    line-height: 1.2;
     
 }
 
@@ -823,8 +926,15 @@ a.nav__enlace:last-of-type:hover{
     margin-bottom: 3rem;
 }
 
+@media (min-width: 768px ) {
+    .grid__character{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 5rem;
+    }
+}
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
 
     .grid__character{
         display: grid;
@@ -1066,15 +1176,21 @@ a.nav__enlace:last-of-type:hover{
     height: 35vh;
 }
 
+@media (min-width: 360px) {
+    .banner__index--don{
+        height: 38vh;
+    }
+}
+
 @media (min-width: 768px) {
     .banner__index--don{
-        height: 66vh;
+        height: 40vh;
     }
 }
 
 @media (min-width: 992px) {
     .banner__index--don{
-        height: 71vh;
+        height: 50vh;
     }
 }
 
@@ -1137,7 +1253,7 @@ a.nav__enlace:last-of-type:hover{
 
 .aside__imagen{
     display: block;
-    margin: 1rem auto;
+    margin: 0 auto;
     width: 5%;
 }
 
@@ -1301,11 +1417,6 @@ a.nav__enlace:last-of-type:hover{
     width: 100%;
   }
   
-
-  
-
-
-
 /* //////////////// .Crear desaparecido /////////////////////////*/
 
 /* //////////////// Item desaparecido /////////////////////////*/
@@ -1325,10 +1436,15 @@ a.nav__enlace:last-of-type:hover{
   margin-bottom: 1rem;
 }
 
+.comentario__imagen{
+    display: flex;
+    justify-content: center;
+}
+
 .comentario__img{
     border-radius: 50%;
-    height: 10rem;
-    width: 10rem;
+    height: 50%;
+    width: 50%;
 }
 
 
@@ -1347,6 +1463,16 @@ a.nav__enlace:last-of-type:hover{
     justify-content: center;
     align-items: center;
     margin: 3rem auto;
+}
+
+@media (min-width: 768px) {
+  .search{
+      max-width: 80%;
+      grid-template-columns: 3fr 1fr;
+      margin: 2rem auto;
+      justify-content: center;
+      align-items: center;
+  }
 }
 
 .input__search{
@@ -1381,15 +1507,25 @@ a.nav__enlace:last-of-type:hover{
     margin: 0 auto;
 }
 
+
+@media (min-width: 992px) {
+    .cards__contenedor{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
 @media (min-width: 768px) {
     .card__des{
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr 2fr;
         gap: 1rem;
         justify-content: center;
         align-items: center;
     }
 }
+
 
 .cards__desaparecidos{
     border: 0.1rem solid var(--colorGris);
@@ -1399,13 +1535,18 @@ a.nav__enlace:last-of-type:hover{
 
 .card__imagen{
     display: block;
-    margin: 0 auto;
+    margin: 0 auto 10rem auto;
+}
+
+@media (min-width: 768px) {
+    .card__imagen{
+        display: block;
+        margin: 0 auto;
+    }
 }
 
 .card__imgdes{
-    border-radius: 50%;
-    height: 14rem;
-    width: 14rem;
+    max-width: 100%;
 }
 
 /* //////////////// .Ver desaparecidos /////////////////////////*/
