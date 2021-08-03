@@ -1566,7 +1566,45 @@ a.nav__enlace:last-of-type:hover{
 }
 /* //////////////// .Ver desaparecidos /////////////////////////*/
 
+/* //////////////// Panel de Administración //////////////////// */
 
+.cards__pa--azul{
+    display: grid;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    color: var(--colorBlanco);
+    font-family: var(--fuenteParrafos);
+    font-size: 2rem;
+    text-align: center;
+}
+
+@media (min-width: 480px) {
+    .cards__pa--azul{
+        max-width: 50%;
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+}
+
+.card--azul{
+    height: 30rem;
+    background-color: var(--colorPrimario);
+}
+
+.card--azul:hover{
+    background-color: var(--colorPrimarioOscuro);
+}
+
+.img__card--azul{
+    width: 10rem;
+    display: block;
+    margin: 0 auto;
+}
 
 
 
