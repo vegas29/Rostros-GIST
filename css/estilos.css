@@ -16,6 +16,10 @@
     --btnVerde: #00B217;
     --btnRojo: #b20600;
     --btnRojoHover: #e03e38;
+    --btnModificar: #f3c90d;
+    --btnEliminar: #dd1313;
+    --btnEliminarHover: #c52626;
+    --btnModificarHover: #ebc51f;
 }
 
 html{
@@ -1607,7 +1611,32 @@ a.nav__enlace:last-of-type:hover{
 }
 
 
+/* //////////////// .Panel de Administración //////////////////// */
 
+
+/* //////////////// Mis Publicaciones //////////////////// */
+
+.card__boton{
+    display: flex;
+}
+
+.btn-modificar{
+    background-color: var(--btnModificar);
+}
+
+.btn-modificar:hover{
+    background-color: var(--btnModificarHover);
+}
+
+.btn-eliminar{
+    background-color: var(--btnEliminar);
+}
+
+.btn-eliminar:hover{
+    background-color: var(--btnEliminarHover);
+}
+
+/* //////////////// . Mis Publicaciones //////////////////// */
 
 
 
