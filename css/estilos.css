@@ -1441,16 +1441,24 @@
   }
   
   /*Comentario*/
-  
+
   .grid__comentario{
-  grid-template-columns: 1fr 4fr;
-  gap: 2rem;
-  border: 0.1rem solid var(--colorPrimario);
-  padding: 1rem;
-  border-radius: 1rem;
-  margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
   }
   
+  @media (min-width: 768px) { 
+    .grid__comentario{
+      display: grid;
+      grid-template-columns: 2fr 4fr;
+      gap: 2rem;
+      border: 0.1rem solid var(--colorPrimario);
+      padding: 1rem;
+      border-radius: 1rem;
+      margin-bottom: 1rem;
+    }
+  }
+
   .comentario__imagen{
     display: flex;
     justify-content: center;
@@ -1460,6 +1468,22 @@
     border-radius: 50%;
     height: 50%;
     width: 50%;
+  }
+
+
+  .comentario__flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  @media (min-width: 768px) { 
+    .comentario__flex{
+      flex-direction: row;
+      justify-content: center;
+      column-gap: 1rem;
+    }
   }
   
   
